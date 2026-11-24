@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.example.chest_guy.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "blend_transition": 0.2,
+          "transitions": [
+            { "swimming": "q.is_in_water" },
+            { "walk": "q.modified_move_speed > 0.05" }
+          ]
+        },
+        "walk": {
+          "animations": ["walk"],
+          "blend_transition": 0.2,
+          "transitions": [
+            { "swimming": "q.is_in_water" },
+            { "idle": "q.modified_move_speed <= 0.05" }
+          ]
+        },
+        "swimming": {
+          "animations": ["swimming"],
+          "blend_transition": 0.3,
+          "transitions": [
+            { "idle": "!q.is_in_water" }
+          ]
+        }
+      }
+    }
+  }
+}
