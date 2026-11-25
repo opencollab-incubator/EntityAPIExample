@@ -1,0 +1,4 @@
+name: exampleentityapi-plugin
+main: dev.opencollab.Plugin
+version: 0.1.0
+depend: ["GeyserUtils"]

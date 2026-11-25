@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "example:chest_guy",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/chest_guy"
+      },
+      "geometry": {
+        "default": "geometry.example.chest_guy"
+      },
+      "animations": {
+        "idle": "animation.example.chest_guy.idle",
+        "walk": "animation.example.chest_guy.walk",
+        "swimming": "animation.example.chest_guy.swimming",
+        "move": "controller.animation.example.chest_guy.move"
+      },
+      "scripts": {
+        "animate": ["move"]
+      },
+      "render_controllers": ["controller.render.default"]
+    }
+  }
+}

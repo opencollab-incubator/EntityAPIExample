@@ -1,0 +1,10 @@
+id: exampleentityapi-extension
+name: ExampleEntityAPIExtension
+main: dev.opencollab.MainExtension
+api: 2.11.2
+version: 1.0.0
+authors: [Auri]
+dependencies:
+  geyserutils:
+    load: BEFORE
+    required: true
